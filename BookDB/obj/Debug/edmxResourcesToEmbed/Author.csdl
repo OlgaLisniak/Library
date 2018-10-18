@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibraryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="LibraryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BookSet" EntityType="LibraryModel.Book" />
+    <EntitySet Name="AuthorSet" EntityType="LibraryModel.Author" />
+    <AssociationSet Name="BookAuthor" Association="LibraryModel.BookAuthor">
+      <End Role="Book" EntitySet="BookSet" />
+      <End Role="Author" EntitySet="AuthorSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="String" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <NavigationProperty Name="Author" Relationship="LibraryModel.BookAuthor" FromRole="Book" ToRole="Author" />
+  </EntityType>
+  <EntityType Name="Author">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="Surname" Type="String" Nullable="false" />
+    <Property Name="Country" Type="String" Nullable="false" />
+    <NavigationProperty Name="Book" Relationship="LibraryModel.BookAuthor" FromRole="Author" ToRole="Book" />
+  </EntityType>
+  <Association Name="BookAuthor">
+    <End Type="LibraryModel.Book" Role="Book" Multiplicity="1" />
+    <End Type="LibraryModel.Author" Role="Author" Multiplicity="*" />
+  </Association>
+</Schema>

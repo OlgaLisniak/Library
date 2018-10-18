@@ -1,0 +1,16 @@
+G:\Apriorit\Homework\BookDB\BookDB\obj\Debug\BookDB.csproj.CoreCompileInputs.cache
+G:\Apriorit\Homework\BookDB\BookDB\bin\Debug\BookDB.exe.config
+G:\Apriorit\Homework\BookDB\BookDB\bin\Debug\BookDB.exe
+G:\Apriorit\Homework\BookDB\BookDB\bin\Debug\BookDB.pdb
+G:\Apriorit\Homework\BookDB\BookDB\bin\Debug\EntityFramework.dll
+G:\Apriorit\Homework\BookDB\BookDB\bin\Debug\EntityFramework.SqlServer.dll
+G:\Apriorit\Homework\BookDB\BookDB\bin\Debug\EntityFramework.xml
+G:\Apriorit\Homework\BookDB\BookDB\bin\Debug\EntityFramework.SqlServer.xml
+G:\Apriorit\Homework\BookDB\BookDB\bin\Debug\ru\EntityFramework.resources.dll
+G:\Apriorit\Homework\BookDB\BookDB\obj\Debug\BookDB.csproj.CopyComplete
+G:\Apriorit\Homework\BookDB\BookDB\obj\Debug\BookDB.exe
+G:\Apriorit\Homework\BookDB\BookDB\obj\Debug\BookDB.pdb
+G:\Apriorit\Homework\BookDB\BookDB\obj\Debug\BookDB.csprojResolveAssemblyReference.cache
+G:\Apriorit\Homework\BookDB\BookDB\bin\Debug\Dapper.dll
+G:\Apriorit\Homework\BookDB\BookDB\bin\Debug\Dapper.xml
+G:\Apriorit\Homework\BookDB\BookDB\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
